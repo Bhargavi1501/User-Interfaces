@@ -1,9 +1,9 @@
 
 body{
-    background-image: url("http://localhost:3000/bg-intro-desktop.png");
+    background-image: url("http://localhost:3000/pattern-background-desktop.svg"); 
     background-repeat: no-repeat;
     font: poppins, sans-serif;
-    background-color: #da6354;
+    /* background-color: #da6354; */
     background-size: cover;
     font-size: 16px;
 }
@@ -80,6 +80,18 @@ button{
 
 }
 .footer strong{
-    color:rgb(204, 95, 95);
+    color:rgb(83, 73, 168);
 
+}
+
+.input{
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
 }
