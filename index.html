@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Anuphan:wght@300&family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;margin-top: 10px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <form name="myForm">
+        <div class="day">
+          <label for="day">DAY</label><br/>
+          <input type="number" name="day" id="day" placeholder="DD" required minlength="2"/>
+          <span id="error-day">This is a required field</span>
+        </div>
+        
+        <div class="month">
+          <label for="month">MONTH</label>
+          <input type="number" name="month" id="month" placeholder="MM" required minlength="2"/>
+          <span id="error-month">This is a required field</span>
+        </div>
+        
+        <div class="year">
+          <label for="year">YEAR</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" required minlength="4"/>
+          <span id="error-year">This is a required field</span>
+        </div>
+        
+        <button type="button" onclick="calculateAge()"><img src="./assets/images/icon-arrow.svg"></button>
+      </form>
+      
+      <hr>
+
+      <div class="calculatedage">
+        <span class="age">--</span><h1>years</h1><br>
+        <span class="age">--</span><h1>months</h1><br>
+        <span class="age">--</span><h1>days</h1>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  
+  <script src="index.js" type="javascript"></script>
+</body>
+</html>
