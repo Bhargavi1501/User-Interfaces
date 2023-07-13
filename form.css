@@ -1,0 +1,128 @@
+body{
+    background-color: hsl(235, 18%, 26%);
+    font-family: Roboto;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+}
+
+.container{
+    border-radius: 20px;
+    background-color:hsl(0, 0%, 100%);
+    max-width: 955px;
+    margin:  0 auto;
+    padding: 1.5rem;
+    display: flex;
+}
+h1{
+    font-weight: bolder;
+    font-size: 50px;
+    color: hsl(234, 29%, 20%);
+}
+ul img {
+    height: 15px;
+    width: 15px;
+    display: inline;
+}
+ul li{
+    display: inline-block;
+    margin:5px;
+}
+/* .content p{
+    margin-bottom: 0.8rem;
+} */
+.content ul li{
+    list-style-image: url("icon-list.svg");
+    list-style-position: inside;
+}
+.content ul{
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+form{
+    margin-top: 2rem;
+}
+img{
+    height: 400px;
+    width: 400px;
+    display: inline;
+    padding: 0;
+    margin:0;
+}
+.right img{
+    width: 100%;
+}
+.email-label{
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.content{
+    margin: 25px;
+    font-size: 12px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 25%;
+    margin-left: 15px;
+}
+form input{
+    border: 1px solid grey;
+    height: 70%;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+form button{
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    height: 75%;
+    width: 65%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+form input:hover, button:hover{
+    cursor: pointer;
+}
+form button:hover{
+    background-image: linear-gradient(to right, #db3aa6 0%, #e27455 51%, #fa5205f6 100%)
+}
+.thanks-message{
+    border-radius: 20px;
+    background-color:hsl(0, 0%, 100%);
+    max-width: 300px;
+    margin:  0 auto;
+    padding: 1.5rem;
+    font-size: 15px;
+    display: none;
+}
+.thanks-message button{
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    height: 75%;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.thanks-message button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, #db3aa6 0%, #e27455 51%, #fa5205f6 100%);
+}
+@media (max-width:768px) {
+    body{
+        line-height: 1.2rem;
+    }
+    .container{
+        width:100%;
+    }
+}
